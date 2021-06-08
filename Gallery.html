@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<link rel="stylesheet" href="../UOD/CSS/Taekwondo.css">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<link rel="icon" type="image/png" href="../UOD/Pictures/Icons/favicon-16x16.png" sizes="16x16" />
+<title>University of Dundee Taekwon-do Society</title>
+</head>
+
+<header>
+<a href="Home.html"><img src="../UOD/Pictures/Icons/dundeeLogo.jpg" alt="University Of Dundee Logo" width="126" height="102" class="flowLeft"></a>
+<h1><p><br><br>&nbsp;University of Dundee Taekwon-do Society</p></h1>
+</header>
+
+<div class="container">
+<nav id="nav" role="navigation">
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="Membership.html">Membership</a></li>
+		<li><a href="Training.html">Training</a></li>
+		<li><a href="Events.html">Events</a></li>
+		<li><a href="Gallery.html">Gallery</a></li>
+		<li><a href="FAQ.html">FAQ</a></li>
+		<li><a href="Staff.html">Instuctors and Committee</a></li>
+		<li><a href="Contact.html">Contact</a></li>
+	</ul>
+</nav>
+<br>
+</div>
+</header>
+
+<header><h2>GALLERY</h2></header>
+
+<main>
+<style>
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="../UOD/Pictures/Images/tkd2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="../UOD/Pictures/Images/groupPic.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="../UOD/Pictures/Images/groupPic2016.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+</main>
+
+<footer>
+<p><img src="../UOD/Pictures/Icons/fbicon.png" width="20" height="20" float="left"><a href="https://www.facebook.com/groups/115927059112915/">University of Dundee Taekwon-do Fresher's Group</a>
+<p><img src="../UOD/Pictures/Icons/instagram.jpg" width="20" height="20" float="left"><a href="https://www.instagram.com/dundeeunitkd/?hl=en">University of Dundee Taekwon-do Instagram</a>
+<p>The University of Dundee is a Scottish Registered Charity, No. SC015096 <br>
+&copy;<a href="https://www.dundee.ac.uk/">University of Dundee</a></p>
+</body>
+</html>

@@ -1,0 +1,343 @@
+
+html, body {
+	background: #ffffff; /*White*/
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #254b96;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 2.5% 0;
+	background: white;
+	line-height: 1.5;
+}
+
+li{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 120%;
+}
+
+	
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  grid-auto-rows: 240px;
+  grid-auto-columns: minmax(200px);
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 150%;
+  text-align: center;
+  vertical-align: middle;
+line-height: 240px;   
+opacity: 0.7;
+  
+}
+.box:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+	transition-delay: 0.05s;
+	webkit-transition-delay: 0.05s;
+}
+
+.box-title {
+	background-color: #298ebb;
+	opacity: 0.8;
+  color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 150%;
+  text-align: center;
+    vertical-align: middle;
+}
+
+
+/*nav styles*/
+.container nav {
+  background: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+	overflow: hidden;
+  background-color: #eee;
+}
+
+nav a {
+  display: block;
+    color: #444;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+      opacity: 1;
+	  background-color: #ccc;
+	      transition: 0.4s;
+}
+
+
+nav ul li {
+  display: inline-block;
+  float: center;
+}
+
+.home{
+	grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+.membership{
+	grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+     background-image:url('../../UOD/Pictures/Images/membership.jpeg');
+}
+.training{    
+		grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+     background-image:url('../../UOD/Pictures/Images/training.jpeg');
+ 
+}
+.events{    
+		grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+     background-image:url('../../UOD/Pictures/Images/events.jpeg');
+
+}
+.gallery{        
+		grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+     background-image:url('../../UOD/Pictures/Images/gallery.jpeg');
+
+}
+.faq{        
+		grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+     background-image:url('../../UOD/Pictures/Images/faq.jpeg');
+}
+.staff{
+	grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+     background-image:url('../../UOD/Pictures/Images/staff.jpeg');
+
+}
+
+.description{
+	grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+	
+}
+
+.contact{
+		grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+     background-image:url('../../UOD/Pictures/Images/contact.jpeg');
+
+}
+
+font {
+	font: 1.2em 'Open Sans', sans-serif;
+    color: white;
+	
+}
+
+font1{
+	font: .8em 'Open Sans', sans-serif;
+    color: white;
+
+}
+
+
+h1 {
+	font: 1.7em 'Open Sans', sans-serif;
+	margin-bottom: .4em;
+	color: black;
+}
+
+h2 {
+	font: 1.6em 'Open Sans', sans-serif;
+	margin-bottom: .8em;
+}
+
+h3 {
+	font: 1.4em 'Open Sans', sans-serif;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+a{
+	color: #7ec0ee;
+	text-decoration:none
+}
+
+a:hover {
+	opacity: 1;
+	transition-delay: 0.05s;
+	webkit-transition-delay: 0.05s;
+	color: #254b96;
+}
+pre {
+	font-size: 1.4em;
+	color: white;
+	padding: .5em 1em;
+	border-left: 1em solid #A68048;
+	background: #666;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	width: 80%;
+}
+pre.wrong {
+	border-left-color: red;
+}
+pre.correct {
+	border-left-color: green;
+}
+dt {
+	font-style: italic;
+	font-size:1.2em;
+}
+dd {
+	margin-bottom: 1.4em;
+}
+table {
+	margin-top: 1em;
+	
+}
+
+.table1{
+	margin-top: 1em;
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+caption {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	text-align: left;
+}
+td, th {
+	padding: 10px;
+}
+.center {
+	text-align: center;
+}
+header h2 {
+	padding-bottom: .2em;
+	border-bottom: 1px solid gray;
+}
+aside {
+	padding: 1em;
+	background:rgb(83, 104, 138);
+	color: white;
+	margin-bottom: 1em;
+}
+aside h4 {
+	color: white;
+}
+footer {
+	text-align: center;
+	font-size: .8em;
+	line-height: 1.2em;
+	margin-top: 1.5em;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #298ebb;
+  color: #fff;
+
+}
+blockquote {
+	font-style: italic;
+}
+.flowRight {
+	float: right;
+	margin-left: 10px;
+}
+.flowLeft {
+	float: left;
+	margin-right: 10px;
+}
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+/* display a + sign when the box are not pressed*/
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 5px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+/* display a - sign when the box are pressed*/
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
